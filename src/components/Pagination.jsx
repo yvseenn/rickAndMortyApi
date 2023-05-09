@@ -1,5 +1,4 @@
 import "./Pagination.scss"
-// eslint-disable-next-line react/prop-types
 const Pagination = ({ prev, next, onPrevious, onNext }) => {
   const handlePrevious = () => {
     onPrevious();

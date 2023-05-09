@@ -24,7 +24,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: greenyellow;
+  background-color: rgb(0, 0, 0);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -45,6 +45,14 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #500000;
+  }
+}
+@media (max-width: 570px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 }

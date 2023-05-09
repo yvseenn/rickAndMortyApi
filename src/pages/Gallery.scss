@@ -1,10 +1,25 @@
-
-.container__button{
+.filters {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-right: 10px;
+  }
 .search {
     display: flex;
     justify-content: center;
@@ -43,3 +58,121 @@
         }
     }
 }
+
+@media (max-width: 570px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    label {
+      margin-bottom: 10px;
+    }
+  
+    input,
+    select {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .search {
+      flex-direction: column;
+      gap: 10px;
+  
+      .input {
+        width: 100%;
+      }
+    }
+  
+    .container {
+      justify-content: center;
+  
+      .container__cards {
+        width: 250px;
+        max-height: fit-content ;
+        margin: 15px;
+        border: 10px solid greenyellow ;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+         img {
+            width:250px;
+            max-height: auto;
+            margin-bottom: 10px;
+        }
+
+        .container__cards__status {
+            .red {
+                background-color: rgb(181, 61, 61);
+            }
+            .green {
+                background-color: rgb(70, 192, 70);
+            }
+            .grey {
+                background-color: rgb(142, 137, 137) ;
+            }
+        }
+    }
+    }
+  }
+
+  @media (max-width: 770px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    label {
+      margin-bottom: 10px;
+    }
+  
+    input,
+    select {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .search {
+      flex-direction: column;
+      gap: 10px;
+  
+      .input {
+        width: 100%;
+      }
+    }
+  
+    .container {
+      justify-content: center;
+  
+      .container__cards {
+        width: 250px;
+        max-height: fit-content ;
+        margin: 15px;
+        border: 10px solid greenyellow ;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+         img {
+            width:250px;
+            max-height: auto;
+            margin-bottom: 10px;
+        }
+
+        .container__cards__status {
+            .red {
+                background-color: rgb(181, 61, 61);
+            }
+            .green {
+                background-color: rgb(70, 192, 70);
+            }
+            .grey {
+                background-color: rgb(142, 137, 137) ;
+            }
+        }
+    }
+    }
+  }

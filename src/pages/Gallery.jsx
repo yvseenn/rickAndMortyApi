@@ -88,21 +88,18 @@ const [speciesFilter, setSpeciesFilter] = useState("");
       <option value='unknown'>Unknown</option>
     </select>
   </div>
-</div>
-
-        <div className="container__button">
+        <div className='search'>
+        <label htmlFor='search'>Search:</label>
+        <input className='input' type='text' id='search' value={search} onChange={handleSearch} placeholder="Search for a character" />
+      </div>
+        </div>
+                <div className="container__button">
           <Pagination
             prev={info.prev}
             next={info.next}
             onPrevious={onPrevious}
             onNext={onNext}
           />
-        </div>
-        <div>
-        <div className='search'>
-        <label htmlFor='search'>Search:</label>
-        <input className='input' type='text' id='search' value={search} onChange={handleSearch} placeholder="Search for a character" />
-      </div>
         </div>
       <div className="container">
         {searchedcharacters.map((character) => (
