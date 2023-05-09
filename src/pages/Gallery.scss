@@ -1,0 +1,45 @@
+
+.container__button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    .input {
+        border-radius: 5px;
+    }
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+
+    .container__cards {
+        width: 350px;
+        max-height: fit-content ;
+        margin: 25px;
+        border: 10px solid greenyellow ;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        .container__cards__status {
+            .red {
+                background-color: rgb(181, 61, 61);
+            }
+            .green {
+                background-color: rgb(70, 192, 70);
+            }
+            .grey {
+                background-color: rgb(142, 137, 137) ;
+            }
+        }
+    }
+}
